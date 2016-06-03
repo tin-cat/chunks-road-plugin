@@ -1,0 +1,57 @@
+{
+    "title": "Road Builder",
+    "version": "0.0.1",
+
+    "description": "Builds roads, just like the Roller Coaster Builder plugin, on which is strongly based.",
+    "icon": "icon.png",
+
+    "authors": [ "Made by Tin.cat based on the Roller Coaster Builder plugin by Facepunch Studios Ltd" ],
+    "tags": [ "core", "road", "tools" ],
+
+    "requires":
+    [
+       { "name": "Core", "id": 542907495 },
+       { "name": "Sandbox", "id": 571542700 },
+       { "name": "Explosives", "id": 571541221 }
+    ],
+
+    "scripts": [ "Binaries/Road.dll" ],
+
+    "includes": [ "surfaces.json", "carmodel.json" ],
+    
+    "namespace" : "Road",
+
+    "sfx":
+    {
+        "ChainLift": {
+            "file": "Sounds/winch-loop.wav",
+            "looping": true,
+            "volume": 0.5
+        },
+        "Rolling": {
+            "file": "Sounds/roll-loop.wav",
+            "looping": true,
+            "volume": 0.5
+        }
+    },
+
+    "textures":
+    {
+        "RoadIcon": {
+            "file": "road.png"
+        },
+
+        "ControllerIcon": {
+            "file": "controller.png"
+        }
+    },
+
+    "models":
+    {
+        "Arrow": {
+            "file": "arrow.obj",
+            "object": "Arrow",
+            "surface": "Core.Colors.White"
+        }
+    }
+}

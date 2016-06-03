@@ -1,0 +1,5 @@
+D:\Steam\steamapps\common\Chunks\Plugins\Road\Binaries\Road.dll
+D:\Steam\steamapps\common\Chunks\Plugins\Road\Binaries\Road.pdb
+D:\Steam\steamapps\common\Chunks\Plugins\Road\obj\Debug\Road.csprojResolveAssemblyReference.cache
+D:\Steam\steamapps\common\Chunks\Plugins\Road\obj\Debug\Road.dll
+D:\Steam\steamapps\common\Chunks\Plugins\Road\obj\Debug\Road.pdb

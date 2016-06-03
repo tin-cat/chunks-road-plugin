@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75f8e167-3566-4349-bb42-106c888dd79d}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Road</RootNamespace>
+    <AssemblyName>Road</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Binaries\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Binaries\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Chunks">
+      <HintPath>$(SolutionDir)..\Chunks_Data\Managed\Chunks.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{5266cf11-04d5-4678-851b-e9f95a9caef7}</Project>
+      <Name>Core</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Sandbox\Sandbox.csproj">
+      <Project>{c8d19a48-a362-4d30-a23c-71509b33c650}</Project>
+      <Name>Sandbox</Name>
+      <Private>false</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Explosives\Explosives.csproj">
+      <Project>{65780922-53c9-480d-907f-711fcad66760}</Project>
+      <Name>Explosives</Name>
+      <Private>false</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Source\Biarc.cs" />
+    <Compile Include="Source\BiarcBezierComposite.cs" />
+    <Compile Include="Source\Car.cs" />
+    <Compile Include="Source\CoasterCarTool.cs" />
+    <Compile Include="Source\CoasterTool.cs" />
+    <Compile Include="Source\KeypointCurve.cs" />
+    <Compile Include="Source\TrackMeshGeneration.cs" />
+    <Compile Include="Source\TrackSegment.cs" />
+    <Compile Include="Source\TrackTool.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\roll-clacks-loop.wav" />
+    <None Include="Sounds\roll-loop.wav" />
+    <None Include="Sounds\roll-slide-loop.wav" />
+    <None Include="Sounds\winch-loop.wav" />
+    <None Include="arrow.obj" />
+    <None Include="carmodel.json" />
+    <None Include="controller.png" />
+    <None Include="icon.png" />
+    <None Include="plugin.json" />
+    <None Include="rail.png" />
+    <None Include="road.png" />
+    <None Include="surfaces.json" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

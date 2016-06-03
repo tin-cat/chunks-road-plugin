@@ -1,0 +1,96 @@
+{
+    "namespace" : "Road",
+
+    "surfaces":
+    {
+        "Track.Default": {
+            "image": "rail.png",
+            "rect": {
+                "x": 0,
+                "y": 0,
+                "w": 16,
+                "h": 16
+            },
+            "opaque": false
+        },
+
+        "Track.Brake": {
+            "image": "rail.png",
+            "rect": {
+                "x": 48,
+                "y": 0,
+                "w": 16,
+                "h": 16
+            },
+            "opaque": false
+        },
+
+        "Track.ChainLift": {
+            "image": "rail.png",
+            "rect": {
+                "x": 48,
+                "y": 16,
+                "w": 16,
+                "h": 16
+            },
+            "opaque": false
+        },
+
+        "Track.Booster": {
+            "image": "rail.png",
+            "rect": {
+                "x": 48,
+                "y": 32,
+                "w": 16,
+                "h": 16
+            },
+            "opaque": false
+        },
+        
+        "Support": {
+            "image": "rail.png",
+            "rect": { "x": 0, "y": 16, "w": 16, "h": 16 },
+            "opaque": false
+        },
+
+        "CarSide": {
+            "image": "rail.png",
+            "rect": { "x": 16, "y": 0, "w": 16, "h": 16 },
+            "opaque": false
+        },
+
+        "CarFront": {
+            "image": "rail.png",
+            "rect": { "x": 16, "y": 16, "w": 16, "h": 16 },
+            "opaque": false
+        },
+
+        "CarRear": {
+            "image": "rail.png",
+            "rect": { "x": 32, "y": 0, "w": 16, "h": 16 },
+            "opaque": false
+        },
+
+        "CarTop": {
+            "image": "rail.png",
+            "rect": { "x": 32, "y": 16, "w": 16, "h": 16 },
+            "opaque": false
+        },
+
+        "CarTopInner": {
+            "image": "rail.png",
+            "rect": { "x": 32, "y": 32, "w": 16, "h": 16 },
+            "opaque": false
+        },
+
+        "CarBottom": {
+            "image": "rail.png",
+            "rect": { "x": 0, "y": 32, "w": 16, "h": 16 }
+        },
+
+        "CarBottomInner": {
+            "image": "rail.png",
+            "rect": { "x": 16, "y": 32, "w": 16, "h": 16 }
+        }
+    }
+}
