@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{75f8e167-3566-4349-bb42-106c888dd79d}</ProjectGuid>
+    <ProjectGuid>{75F8E167-3566-4349-BB42-106C888DD79D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Road</RootNamespace>
@@ -76,13 +76,17 @@
     <None Include="Sounds\roll-slide-loop.wav" />
     <None Include="Sounds\winch-loop.wav" />
     <None Include="arrow.obj" />
+    <None Include="car.png" />
     <None Include="carmodel.json" />
+    <None Include="carmodel.json.old" />
     <None Include="controller.png" />
     <None Include="icon.png" />
     <None Include="plugin.json" />
     <None Include="rail.png" />
+    <None Include="README.md" />
     <None Include="road.png" />
     <None Include="surfaces.json" />
+    <None Include="surfaces.json.old" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

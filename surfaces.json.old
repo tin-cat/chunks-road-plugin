@@ -53,70 +53,44 @@
             "opaque": false
         },
 
-		"CarBottom": {
-            "image": "car.png",
-           "rect": { "x": 16, "y": 16, "w": 16, "h": 16 },
-            "opaque": false
-        },
-
-		"CarTop": {
-            "image": "car.png",
-            "rect": { "x": 0, "y": 16, "w": 16, "h": 16 },
-            "opaque": false
-        },
-
-		"CarFront": {
-            "image": "car.png",
+        "CarSide": {
+            "image": "rail.png",
             "rect": { "x": 16, "y": 0, "w": 16, "h": 16 },
             "opaque": false
         },
 
-		"CarBack": {
-            "image": "car.png",
-            "rect": { "x": 16, "y": 0, "w": 16, "h": 16 },
+        "CarFront": {
+            "image": "rail.png",
+            "rect": { "x": 16, "y": 16, "w": 16, "h": 16 },
             "opaque": false
         },
 
-		"CarRightTop": {
-            "image": "car.png",
-            "rect": { "x": 48, "y": 0, "w": 16, "h": 16 },
-            "opaque": false
-        },
-
-		"CarRightBottom": {
-            "image": "car.png",
-            "rect": { "x": 0, "y": 0, "w": 16, "h": 16 },
-            "opaque": false
-        },
-
-        "CarLeftTop": {
-            "image": "car.png",
-            "rect": { "x": 48, "y": 0, "w": 16, "h": 16 },
-            "opaque": false
-        },
-
-		"CarLeftBottom": {
-            "image": "car.png",
-            "rect": { "x": 0, "y": 0, "w": 16, "h": 16 },
-            "opaque": false
-        },
-
-		"CarWindshield": {
-            "image": "car.png",
-            "rect": { "x": 32, "y": 16, "w": 16, "h": 16 },
-            "opaque": false
-        },
-
-		"CarBackWindshield": {
-            "image": "car.png",
-            "rect": { "x": 32, "y": 16, "w": 16, "h": 16 },
-            "opaque": false
-        },
-
-		"CarHood": {
-            "image": "car.png",
+        "CarRear": {
+            "image": "rail.png",
             "rect": { "x": 32, "y": 0, "w": 16, "h": 16 },
             "opaque": false
+        },
+
+        "CarTop": {
+            "image": "rail.png",
+            "rect": { "x": 32, "y": 16, "w": 16, "h": 16 },
+            "opaque": false
+        },
+
+        "CarTopInner": {
+            "image": "rail.png",
+            "rect": { "x": 32, "y": 32, "w": 16, "h": 16 },
+            "opaque": false
+        },
+
+        "CarBottom": {
+            "image": "rail.png",
+            "rect": { "x": 0, "y": 32, "w": 16, "h": 16 }
+        },
+
+        "CarBottomInner": {
+            "image": "rail.png",
+            "rect": { "x": 16, "y": 32, "w": 16, "h": 16 }
         }
     }
 }

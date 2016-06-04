@@ -1,0 +1,108 @@
+{
+    "namespace" : "Road",
+    
+    "models":
+    {
+        "Car": {
+            "vertex_resolution": 16,
+            "uv_resolution": 16,
+
+            "faces":
+            [
+                {
+                    "surface": "CarFront",
+                    "center": [ 0, 4, 8 ],
+                    "normal": [ 0, 0, 1 ],
+                    "size": [ 14, 8 ],
+                    "uvmin": [ 1, 0 ],
+                    "uvmax": [ 15, 8 ]
+                },
+                {
+                    "surface": "CarFront",
+                    "center": [ 0, 4, 8 ],
+                    "normal": [ 0, 0, -1 ],
+                    "size": [ 14, 8 ],
+                    "uvmin": [ 1, 8 ],
+                    "uvmax": [ 15, 16 ]
+                },
+
+                {
+                    "surface": "CarRear",
+                    "center": [ 0, 4, -8 ],
+                    "normal": [ 0, 0, -1 ],
+                    "size": [ 14, 8 ],
+                    "uvmin": [ 1, 0 ],
+                    "uvmax": [ 15, 8 ]
+                },
+                {
+                    "surface": "CarRear",
+                    "center": [ 0, 4, -8 ],
+                    "normal": [ 0, 0, 1 ],
+                    "size": [ 14, 8 ],
+                    "uvmin": [ 1, 8 ],
+                    "uvmax": [ 15, 16 ]
+                },
+
+                {
+                    "surface": "CarSide",
+                    "center": [ 7, 4, 0 ],
+                    "normal": [ 1, 0, 0 ],
+                    "size": [ 16, 8 ],
+                    "uvmin": [ 0, 0 ],
+                    "uvmax": [ 16, 8 ]
+                },
+                {
+                    "surface": "CarSide",
+                    "center": [ 7, 4, 0 ],
+                    "normal": [ -1, 0, 0 ],
+                    "size": [ 16, 8 ],
+                    "uvmin": [ 16, 8 ],
+                    "uvmax": [ 0, 16 ]
+                },
+
+                {
+                    "surface": "CarSide",
+                    "center": [ -7, 4, 0 ],
+                    "normal": [ -1, 0, 0 ],
+                    "size": [ 16, 8 ],
+                    "uvmin": [ 16, 0 ],
+                    "uvmax": [ 0, 8 ]
+                },
+                {
+                    "surface": "CarSide",
+                    "center": [ -7, 4, 0 ],
+                    "normal": [ 1, 0, 0 ],
+                    "size": [ 16, 8 ],
+                    "uvmin": [ 0, 8 ],
+                    "uvmax": [ 16, 16 ]
+                },
+
+                {
+                    "surface": "CarTop",
+                    "center": [ 0, 8, 0 ],
+                    "normal": [ 0, 1, 0 ],
+                    "size": [ 14, 16 ],
+                    "uvmin": [ 1, 0 ],
+                    "uvmax": [ 15, 16 ]
+                },
+
+                {
+                    "surface": "CarBottom",
+                    "center": [ 0, 2, 0 ],
+                    "normal": [ 0, -1, 0 ],
+                    "size": [ 14, 16 ],
+                    "uvmin": [ 1, 0 ],
+                    "uvmax": [ 15, 16 ]
+                },
+                {
+                    "surface": "CarBottomInner",
+                    "center": [ 0, 2, 0 ],
+                    "normal": [ 0, 1, 0 ],
+                    "size": [ 14, 16 ],
+                    "uvmin": [ 1, 0 ],
+                    "uvmax": [ 15, 16 ]
+                }
+            ]
+        }
+    }
+}

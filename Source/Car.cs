@@ -14,6 +14,7 @@ namespace Road
     public class Car : Component
     {
         public const float DefaultFriction = 0.025f;
+        public const float DefaultMinTangentialVelocity = 0.1f;
 
         private readonly SoundEffect _chainSound = Plugin.GetResource<SoundEffect>("Road.ChainLift");
         private readonly SoundEffect _rollingSound = Plugin.GetResource<SoundEffect>("Road.Rolling");
@@ -47,6 +48,7 @@ namespace Road
         public float TopSpeed { get; set; }
         public float Torque { get; set; }
         public float Friction { get; set; }
+        public float MinTangentialVelocity { get; set; }
 
         public float TangentialVelocity { get; private set; }
 
@@ -56,6 +58,7 @@ namespace Road
         {
             TopSpeed = 2f;
             Friction = DefaultFriction;
+            MinTangentialVelocity = DefaultMinTangentialVelocity;
         }
 
         protected override void OnInitialize()
@@ -446,6 +449,12 @@ namespace Road
 
             _soundEmitter.Pitch = pitch;
             _rollingEmitter.Pitch = pitch;
+
+            if (TangentialVelocity < MinTangentialVelocity)
+                TangentialVelocity = MinTangentialVelocity;
+
+            if (!anyOnBooster && !anyOnBrake && TangentialVelocity > 1f)
+                DetachFromTrack();
 
             Move(TangentialVelocity * World.PhysicsDeltaTime);
 

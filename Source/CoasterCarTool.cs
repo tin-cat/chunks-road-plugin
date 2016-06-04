@@ -105,7 +105,7 @@ namespace Road
 
         private void OnHairTriggerPressed(object sender, WandButton.EventArgs e)
         {
-            if (_controlled != null) return;
+            if (_controlled != null) StopControlling();
 
             var pos = Wand.GetCursorPosition();
 
@@ -121,6 +121,8 @@ namespace Road
         {
             _controlled = car;
 
+            _controlled.MinTangentialVelocity = 0f;
+
             Wand.TriggerToolTip.Text = "Hold to accelerate";
             Wand.GripToolTip.Text = "Hold to brake";
         }
@@ -131,6 +133,7 @@ namespace Road
             {
                 _controlled.Torque = 0f;
                 _controlled.Friction = Car.DefaultFriction;
+                _controlled.MinTangentialVelocity = Car.DefaultMinTangentialVelocity;
             }
 
             _controlled = null;
@@ -164,13 +167,13 @@ namespace Road
 
             if (Wand.Grip.IsHeld)
             {
-                _controlled.Friction = 0.875f;
+                _controlled.Friction = 0.975f;
                 return;
             }
 
             _controlled.Friction = 0.25f;
 
-            var value = MathF.Clamp01(Wand.TriggerValue*2f);
+            var value = MathF.Clamp01(Wand.TriggerValue);
 
             _controlled.Torque = value;
 
